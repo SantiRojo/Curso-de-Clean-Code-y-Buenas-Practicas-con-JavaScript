@@ -1,0 +1,74 @@
+Curso de Clean Code y Buenas Prácticas con JavaScript
+--------------------------------------------------------
+
+--------------------------------------------------------
+DEUDA TÉCNICA
+--------------------------------------------------------
+
+"Nuestro código tiene que ser simple y directo, debería de leerse con la misma facilidad que un texto bien escrito"
+
+Tipos de Deuda Técnica:
+
+- Imprudente y deliberada -> el desarrollador es consciente de lo que va a hacer y no toma en cuenta el factor de deuda que dejan en el código.
+
+- Imprudente e inadvertida -> el desarrollador no sabe de la deuda que esta dejando y suele ser por falta de conocimiento técnico. Es muy común en los inicios de un desarrollador.
+
+- Prudente y deliberada -> el desarrollador es consciente de la deuda técnica que está dejando pero es consciente de que la deuda se tiene que "pagar" (corregir). Mientras más rapido se corrija, más "barato" saldrá.
+
+- Prudente e inadvertida -> el desarrollador no es consciente de la deuda que genera pero es prudente porque en su momento cree que lo que esta haciendo es la mejor forma. Suele ser muy común detectarla al finalizar un proyecto donde, en base a lo aprendido a lo largo del desarrollo, el desarrollador se da cuenta de lo que se podría haber hecho de una mejor manera.
+
+
+--------------------------------------------------------
+¿CÓMO "PAGAMOS" NUESTRA DEUDA?
+--------------------------------------------------------
+
+Lo hacemos a través de la refactorización de código.
+
+¿Qué es refactorizar?
+
+Es un proceso que tiene como objetivo mejorar el código de un proyecto sin alterar su comportamiento para que sea más entendible y tolerante a cambios.
+
+Antes de ponernos a refactorizar código es importante que éste tenga test que validen el funcionamiento original de código para asegurarnos que vamos a mantener su funcionalidad original.
+
+¿Cuándo refactorizar?
+
+• Cuando el código sea de mala calidad
+
+• Al detectar un code smell
+
+
+--------------------------------------------------------
+4 REGLAS DEL DISEñO SIMPLE
+--------------------------------------------------------
+
+1 - El código debe pasar correctamente los test: tener buenos test ayuda a asegurar la calidad del código en cuanto a su funcionalidad.
+
+2 - Revela la intención del diseño: el código tiene que hablar por sí mismo, tiene que decirle a la persona que lo esta leyendo cuál es la intención de esa función, qué hace, para qué se usa esa variable.
+
+3 - Respeta el principio DRY (Don't Repeat Yourself): si existe repetición de código es probable que se pueda englobar en una función y de esa manera evitar repeticiones de código que lo hacen más extenso y menos legible.
+
+4 - Tiene menor número posible de elementos: mientras más simple sea el código, mucho mejor.
+
+
+--------------------------------------------------------
+CLEAN CODE
+--------------------------------------------------------
+
+¿Qué es?
+
+Es un término popularizado por Robert C. Martin en su libro "Clean Code: A handbook of Agile Software Craftsmanship"
+
+"El código limpio es aquel que se ha escrito con la intención de que otra persona lo entienda"
+
+
+--------------------------------------------------------
+¿CÓMO USAR VAR, LET Y CONST?
+--------------------------------------------------------
+
+Var -> era la única forma de declarar variables (y constantes) antes de ES6. No tiene en cuenta el scope y puede ser modificada y redeclarada desde cualquier parte del código, lo que lo hace más propenso a errores.
+
+Let -> se utiliza para declarar variables cuyo valor puede cambiar.
+
+Const -> se utiliza para declarar variables cuyo valor no va a cambiar. Dichas variables se nombran con mayúsculas.
+
+* Ver ejemplos en archivo "var-let-const.js"
