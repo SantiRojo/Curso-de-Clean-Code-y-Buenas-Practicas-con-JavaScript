@@ -117,6 +117,8 @@ En JavaScript existen 3 tipos de ámbitos:
 
 • Ámbito Global -> cualquier variable puede ser accesada desde cualquier parte de nuestro código
 
-• Ámbito Local o de Función -> 
+• Ámbito Local o de Función -> las variables declaradas en este ámbito solo van a funcionar, existir, vivir dentro de este ámbito.
 
-• Ámbito de Bloque -> 
+• Ámbito de Bloque -> las variables definidas entre { } (bloque de código) sólo están disponibles dentro de ese bloque y no pueden ser accedidas desde fuera de él, excepto que hayan sido declaradas con la palabra reservada "var".
+
+• Ámbito estático -> es el comportamiento que tienen los ámbitos por defecto en JavaScript. Se determina en tiempo de compilación y no de ejecución, y a ésto se lo llama ámbito léxico
