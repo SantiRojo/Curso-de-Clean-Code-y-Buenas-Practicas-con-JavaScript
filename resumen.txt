@@ -71,4 +71,52 @@ Let -> se utiliza para declarar variables cuyo valor puede cambiar.
 
 Const -> se utiliza para declarar variables cuyo valor no va a cambiar. Dichas variables se nombran con mayúsculas.
 
+
 * Ver ejemplos en archivo "var-let-const.js"
+
+
+--------------------------------------------------------
+REGLAS DE NOMENCLATURA
+--------------------------------------------------------
+
+• Nombres pronunciables y expresivos -> preferentemente en inglés y que tengan una estructura Camel Case ("camelCase"). Por otro lado hay que evitar el uso de guiones guiones bajos y abreviaturas
+
+• Nombres sin información técnica -> debemos evitar que los nombres tengan información relacionada a la tecnología, como por ejemplo el tipo de dato, el tipo de clase, etc.
+
+• Usar lenguaje ubicuo -> es aquel que se construye a partir del lenguaje que utilizan los expertos en el dominio, es decir, hay que construir un lenguaje en común entre quienes desarrollan la aplicación y los stakeholders (interesados) Hay que determinar palabras de uso común o específico.
+
+
+* Ver ejemplos en archivo "nomenclatura.js"
+
+
+--------------------------------------------------------
+NOMBRES SEGÚN EL TIPO DE DATO
+--------------------------------------------------------
+
+• Arrays -> al ser listas o colecciones de valores es recomendable utilizar nombres en plural.
+
+• Booleanos -> es recomendable utilizar prefijos como "is", "has" o "can", como decir: "es verdadero", "tiene un elemento" o "contiene x cosa"
+
+• Números -> es recomendable añadirle un prefijo como "min", "max" o "total"
+
+• Funciones -> ya que éstas representan una acción, es recomendable que el nombre inicie con un verbo seguido de un sustantivo y ser consisas, como por ejemplo "getName()". En funciones de acceso, modificación o predicado se recomienda añadir el prefijo "get", "set" o "is".
+
+• Clases -> se recomienda utilizar sustantivos, por ejemplo la clase "User". Es importante no usar nombres genéricos como "Data" o "Manager".
+
+
+* Ver ejemplos en archivo "nombres-segun-datos.js"
+
+
+--------------------------------------------------------
+ÁMBITO DE LAS VARIABLES O SCOPE
+--------------------------------------------------------
+
+Hace referencia a la visibilidad y vida util de las variables que escribimos en nuestro código.
+
+En JavaScript existen 3 tipos de ámbitos:
+
+• Ámbito Global -> cualquier variable puede ser accesada desde cualquier parte de nuestro código
+
+• Ámbito Local o de Función -> 
+
+• Ámbito de Bloque -> 
