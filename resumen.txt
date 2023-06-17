@@ -122,3 +122,50 @@ En JavaScript existen 3 tipos de ámbitos:
 • Ámbito de Bloque -> las variables definidas entre { } (bloque de código) sólo están disponibles dentro de ese bloque y no pueden ser accedidas desde fuera de él, excepto que hayan sido declaradas con la palabra reservada "var".
 
 • Ámbito estático -> es el comportamiento que tienen los ámbitos por defecto en JavaScript. Se determina en tiempo de compilación y no de ejecución, y a ésto se lo llama ámbito léxico
+
+
+* Ver ejemplos en archivo "ambitos.js"
+
+--------------------------------------------------------
+HOISTING
+--------------------------------------------------------
+
+Hoisting es un término para describir que las declaraciones de variables y funciones son desplazadas a la parte superior del scope más cercano, scope global o de función. 
+
+Esto sucede solamente con las declaraciones y no con las asignaciones. El código permanece igual, solo es una interpretación del motor de JavaScript.
+
+
+* Ver ejemplos en archivo "hoisting.js"
+
+
+--------------------------------------------------------
+FUNCIONES
+--------------------------------------------------------
+
+"Se sabe que se ha desarrollado código limpio cuando cada función hace exactamente lo que su nombre indica"
+
+
+PARÁMETROS Y ARGUMENTOS:
+
+• Los ARGUMENTOS son aquellos que se utilizan en las llamadas de las funciones para ejecutar dicha función.
+
+• Los PARÁMETROS son los que utilizamos dentro de nuestra función para trabajar con elementos externos
+
+
+
+* Ver ejemplos en archivo "funciones.js"
+
+
+--------------------------------------------------------
+CLASES
+--------------------------------------------------------
+
+* Ver ejemplos en archivo "clases.js"
+
+
+--------------------------------------------------------
+HERENCIA
+--------------------------------------------------------
+
+* Ver ejemplos en archivo "herencia.js"
+
