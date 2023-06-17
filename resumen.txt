@@ -169,3 +169,71 @@ HERENCIA
 
 * Ver ejemplos en archivo "herencia.js"
 
+
+--------------------------------------------------------
+TAMAñO REDUCIDO - PRINCIPIO DE RESPONSABILIDAD ÚNICA
+--------------------------------------------------------
+
+Tanto las funciones como las clases deben cumplir con un solo objetivo, ya que ésto nos permite escalar mucho mejor el código y tener un código más limpio
+
+* Ver ejemplos en archivo "tamaño-reducido.js"
+
+
+--------------------------------------------------------
+ORGANIZACIÓN DE CLASES
+--------------------------------------------------------
+
+• Variables
+• Constantes
+• Variables estáticas
+• Métodos -> de mayor a menor importancia
+• Funciones estáticas
+• Getters y Setters
+
+
+--------------------------------------------------------
+COMENTARIOS
+--------------------------------------------------------
+
+"No comentes código mal escrito, reescríbelo"
+
+Lo ideal es no tener la necesidad de utilizar los comentarios para explicar el funcionamiento del código, sino que el mismo debe ser autodescriptivo y autoexplicativo y que el código y su funcionamiento se expliquen por sí solos.
+
+Los comentarios que dejemos deben ser comentarios de valor, es decir, deben ser comentariosque expliquen el por qué del código.
+
+Si el comentario que vamos a dejar responde a qué hace el código, lo mejor es revisar el código y aplicar las técnicas de Clean Code para que este se explique por sí solo.
+
+--------------------------------------------------------
+FORMATO COHERENTE -> REGLAS PARA TRABAJAR EN EQUIPO
+--------------------------------------------------------
+
+• Problemas similares, soluciones similares
+
+  Es una buena práctica seguir los mismos patrones de solución.
+
+• Densidad, apertura y distancia vertical
+
+  Las lineas de código que estan relacionadas hay que mantenerlas cerca.
+
+• Lo más importante va primero
+
+  la función o el método principal tienen que estar primero, ya que todo lo que venga después tiene relación con el correcto funcionamiento de ello.
+
+• Indentación
+
+  Lo ideal es que todos los miembros del equipo y los archivos usen de manera homogénea los mismos espacios de indentación.
+
+
+--------------------------------------------------------
+PRINCIPIO DRY (DONT REPEAT YOURSELF)
+--------------------------------------------------------
+
+El principio DRY se asegura que cuando se detecte código duplicado, este sea extraído a una clase o función para utilizarlo en donde se necesite
+
+* Ver ejemplos en archivo "principio-dry.js"
+
+
+--------------------------------------------------------
+BIG O NOTATION
+--------------------------------------------------------
+
