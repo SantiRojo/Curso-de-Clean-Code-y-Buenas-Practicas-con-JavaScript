@@ -28,6 +28,6 @@ console.log('Valor cambiado', edad); // -> 56
 // Uso de const
 
 const PI = 3.14159;
-PI = 33.1416
-console.log(PI); // -> error (TypeError: Assignment to constant variable)
+PI = 33.1416 // -> error (TypeError: Assignment to constant variable)
+console.log(PI); 
 

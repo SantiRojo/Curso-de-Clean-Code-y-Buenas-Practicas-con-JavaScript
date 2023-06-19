@@ -65,7 +65,7 @@ const course = {
 }
 
 const clonedCourse = Object.assign({}, course);
-const spreadClonedCourse = { ...course};
+const spreadClonedCourse = {...course};
 
 console.log(spreadClonedCourse); // {title: 'JavaScript definitivo', content: 'Todo lo que necesitas saber',}
 

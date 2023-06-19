@@ -34,7 +34,7 @@ Antes de ponernos a refactorizar código es importante que éste tenga test que 
 
 • Cuando el código sea de mala calidad
 
-• Al detectar un code smell
+• Al detectar un code smell (código que no nos huele bien)
 
 
 --------------------------------------------------------
@@ -43,7 +43,7 @@ Antes de ponernos a refactorizar código es importante que éste tenga test que 
 
 1 - El código debe pasar correctamente los test: tener buenos test ayuda a asegurar la calidad del código en cuanto a su funcionalidad.
 
-2 - Revela la intención del diseño: el código tiene que hablar por sí mismo, tiene que decirle a la persona que lo esta leyendo cuál es la intención de esa función, qué hace, para qué se usa esa variable.
+2 - Revela la intención del diseño: el código tiene que hablar por sí mismo, tiene que decirle a la persona que lo esta leyendo cuál es la intención de esa función, qué hace, para qué se usa esa variable, etc.
 
 3 - Respeta el principio DRY (Don't Repeat Yourself): si existe repetición de código es probable que se pueda englobar en una función y de esa manera evitar repeticiones de código que lo hacen más extenso y menos legible.
 
@@ -65,11 +65,13 @@ Es un término popularizado por Robert C. Martin en su libro "Clean Code: A hand
 ¿CÓMO USAR VAR, LET Y CONST?
 --------------------------------------------------------
 
-Var -> era la única forma de declarar variables (y constantes) antes de ES6. No tiene en cuenta el scope y puede ser modificada y redeclarada desde cualquier parte del código, lo que lo hace más propenso a errores.
+var -> era la única forma de declarar variables (y constantes) antes de ES6. No tiene en cuenta el scope y puede ser modificada y redeclarada desde cualquier parte del código, lo que lo hace más propenso a errores.
 
-Let -> se utiliza para declarar variables cuyo valor puede cambiar.
+let -> se utiliza para declarar variables cuyo valor puede cambiar.
 
-Const -> se utiliza para declarar variables cuyo valor no va a cambiar. Dichas variables se nombran con mayúsculas.
+const -> se utiliza para declarar variables cuyo valor no va a cambiar a lo largo del programa. Dichas variables se nombran con mayúsculas y deben inicializarse al momento de ser declaradas.
+
+Tanto let como const no pueden redeclararse
 
 
 * Ver ejemplos en archivo "var-let-const.js"
@@ -83,7 +85,7 @@ REGLAS DE NOMENCLATURA
 
 • Nombres sin información técnica -> debemos evitar que los nombres tengan información relacionada a la tecnología, como por ejemplo el tipo de dato, el tipo de clase, etc.
 
-• Usar lenguaje ubicuo -> es aquel que se construye a partir del lenguaje que utilizan los expertos en el dominio, es decir, hay que construir un lenguaje en común entre quienes desarrollan la aplicación y los stakeholders (interesados) Hay que determinar palabras de uso común o específico.
+• Usar lenguaje ubicuo -> es aquel que se construye a partir del lenguaje que utilizan los expertos en el dominio, es decir, hay que construir un lenguaje en común entre quienes desarrollan la aplicación y los stakeholders (interesados). Hay que determinar palabras de uso común o específico.
 
 
 * Ver ejemplos en archivo "nomenclatura.js"
@@ -121,7 +123,9 @@ En JavaScript existen 3 tipos de ámbitos:
 
 • Ámbito de Bloque -> las variables definidas entre { } (bloque de código) sólo están disponibles dentro de ese bloque y no pueden ser accedidas desde fuera de él, excepto que hayan sido declaradas con la palabra reservada "var".
 
-• Ámbito estático -> es el comportamiento que tienen los ámbitos por defecto en JavaScript. Se determina en tiempo de compilación y no de ejecución, y a ésto se lo llama ámbito léxico
+{----------------------}
+
+• Ámbito estático -> es el comportamiento que tienen los ámbitos por defecto en JavaScript. Se determina en tiempo de compilación y no de ejecución, y a ésto se lo llama ámbito léxico.
 
 
 * Ver ejemplos en archivo "ambitos.js"
@@ -145,12 +149,11 @@ FUNCIONES
 "Se sabe que se ha desarrollado código limpio cuando cada función hace exactamente lo que su nombre indica"
 
 
-PARÁMETROS Y ARGUMENTOS:
+ARGUMENTOS Y PARÁMETROS:
 
 • Los ARGUMENTOS son aquellos que se utilizan en las llamadas de las funciones para ejecutar dicha función.
 
-• Los PARÁMETROS son los que utilizamos dentro de nuestra función para trabajar con elementos externos
-
+• Los PARÁMETROS son los que utilizamos dentro de nuestra función al declararla para trabajar con elementos externos.
 
 
 * Ver ejemplos en archivo "funciones.js"
@@ -197,9 +200,9 @@ COMENTARIOS
 
 "No comentes código mal escrito, reescríbelo"
 
-Lo ideal es no tener la necesidad de utilizar los comentarios para explicar el funcionamiento del código, sino que el mismo debe ser autodescriptivo y autoexplicativo y que el código y su funcionamiento se expliquen por sí solos.
+Lo ideal es no tener la necesidad de utilizar los comentarios para explicar el funcionamiento del código, sino que el mismo debe ser autodescriptivo y autoexplicativo, es decir, que el código y su funcionamiento se expliquen por sí solos.
 
-Los comentarios que dejemos deben ser comentarios de valor, es decir, deben ser comentariosque expliquen el por qué del código.
+Los comentarios que dejemos deben ser comentarios de valor, es decir, deben ser comentarios que expliquen el por qué del código.
 
 Si el comentario que vamos a dejar responde a qué hace el código, lo mejor es revisar el código y aplicar las técnicas de Clean Code para que este se explique por sí solo.
 
@@ -213,7 +216,7 @@ FORMATO COHERENTE -> REGLAS PARA TRABAJAR EN EQUIPO
 
 • Densidad, apertura y distancia vertical
 
-  Las lineas de código que estan relacionadas hay que mantenerlas cerca.
+  A las lineas de código que estan relacionadas hay que mantenerlas cerca.
 
 • Lo más importante va primero
 

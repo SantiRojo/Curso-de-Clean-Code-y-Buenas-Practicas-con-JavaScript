@@ -15,20 +15,20 @@ function greet2() {
 }
 
 greet2();
-/* console.log(greeting2); */ // Error (ReferenceError: greeting2 is not defined)
+console.log(greeting2); // Error (ReferenceError: greeting2 is not defined)
 
 
 // Ámbito de Bloque
 {
   let greeting3 = 'Hello World!';
-  const greeting4 = 'ola Mundo!';
+  const greeting4 = 'Hola Mundo!';
   var lang = 'English';
   console.log('Saludos desde el bloque',greeting3);
 }
 
-console.log(lang);
-/* console.log(greeting3); */ // Error: (ReferenceError: greeting3 is not defined)
-/* console.log(greeting4); */ // Error: (ReferenceError: greeting3 is not defined)
+console.log(lang); // English
+console.log(greeting3); // Error: (ReferenceError: greeting3 is not defined)
+console.log(greeting4); // Error: (ReferenceError: greeting4 is not defined)
 
 
 // Ámbito léxico o estático

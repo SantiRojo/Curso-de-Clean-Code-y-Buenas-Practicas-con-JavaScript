@@ -5,7 +5,7 @@ function greet() {
   console.log(greeting);
 }
 
-/* var greet = 'Hello'; */
+var greet = 'Hello';
 
 (
   function() {

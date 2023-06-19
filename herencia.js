@@ -47,7 +47,7 @@ class Cat extends Animal {
   }
 
   eat(hungry) {
-    hungry ? console.log('Its eating') : console.log('Im not hungry');
+    hungry ? console.log(`${this.name} is eating`) : console.log(`${this.name} is not hungry`);
   }
 }
 

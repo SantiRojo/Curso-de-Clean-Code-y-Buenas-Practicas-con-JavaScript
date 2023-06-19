@@ -4,21 +4,22 @@ class UserAuth {
   }
 
   verifyCredentials() {
-    return false;
+    return true;
   }
 }
 
-class UserSettings extends UserAuth{
+class UserSettings extends UserAuth {
   constructor(user, settings) {
     super(user);
     this.settings = settings;
   }
 
   changeSettings(settings) {
-    if (this.verifyCredentials) {
-      console.log('Puede modificar su configuración')
+    if (this.verifyCredentials()) {
+      console.log(`Puede modificar su configuración a ${this.settings}`)
+    } else {
+      console.log('No tiene acceso')
     }
-    console.log('No tiene acceso')
   }
 }
 
